@@ -1,0 +1,20 @@
+<h1>Get me off the gosh darn internet!</h1>
+
+ <% @picture_index.each do |pic| %>
+
+      <img width = 200 src="<%= pic.source %>"
+      <p> <%= pic.id %> </p>
+
+  <% end %>
+
+
+<form action = http://localhost:3000/dead>
+  <div>
+    <label for="picture_id">id:</label>
+    <input id="id" type="integer" name="id">
+  </div>
+
+  <div>
+    <input type="submit" value="Create Picture">
+  </div>
+</form>
